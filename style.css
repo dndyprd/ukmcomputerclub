@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --primary: rgb(0, 0, 250);
+    --secondary: rgb(16, 16, 100);
+    --secondary-gradient: linear-gradient(rgba(16, 16, 100, 0.7), rgba(16, 16, 100, 0.95));
+    --black: rgb(16, 16, 16);
+    --white: rgb(243, 243, 243);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    text-decoration: none;
+    box-sizing: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    background: var(--white);
+    color: var(--black);
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* DEFAULT CSS */
+h5{ 
+    font-family: "Oooh Baby", cursive;
+}
+
+.container{
+    padding: 75px 90px 25px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.title h3{
+    font-size: 52px;
+    font-weight: 700;
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.title h5{
+    font-size: 40px;  
+    margin-top: -55px;
+    color: var(--secondary);
+}
+
+
+/* NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px 8px; 
+    position: fixed; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    background: var(--white);
+    width: 92%;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    line-height: 1.2;
+    color: var(--primary);
+}
+
+nav .logo h4{ 
+    font-weight: 300; 
+}
+
+nav img{
+    width: 55px; 
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul a{
+    color: var(--primary);
+}
+
+nav ul li{
+    margin: 0 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav ul li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: 0.3s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+/* HOME */
+.home{
+    min-height: 100vh;
+    width: 100%;
+    background-image: var(--secondary-gradient), url(/img/hero.jpg); 
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    color: var(--white); 
+}
+
+.home .content{ 
+    text-align: center;
+    padding-top: 50px;
+}
+
+.home .content h1{
+    font-size: 120px;
+    line-height: 0.9;
+    font-weight: 700; 
+    margin: 10px -10px;
+}
+
+.home .content h3{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 10px 0;
+}
+
+.home .content h5{
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1; 
+    font-style: italic;
+}
+
+.home .content .btn{
+    border: 2px solid var(--white);
+    color: var(--white);
+    background: none;
+    padding: 8px 25px;
+    margin: 45px 0 0 5px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.home .content .btn:hover{
+    background: var(--white);
+    color: var(--secondary);
+}
+
+/* Tentang Kami */
+.about{
+    padding: 75px 75px 50px 125px;
+}
+
+.about .content{
+    display: flex;
+    align-items: center;
+}
+
+.about .content .image{
+    width: 40%;
+}
+
+.about .image{
+    position: relative; 
+}
+
+.about .image .box{
+    background: var(--white);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 8px 8px 30px;
+    position: absolute;
+    top: 50%; 
+    transition: 0.3s;
+}
+
+.about .image .box1{
+    transform: translateY(-50%) rotate(-4deg);
+}
+
+.about .image .box2{
+    transform: translateY(-50%) rotate(2deg);
+}
+
+.about .image:hover .box1{
+    transform: translateY(-50%) rotate(-6deg);
+}
+
+.about .image:hover .box2{
+    transform: translateY(-50%) rotate(6deg);
+}
+
+.about .image img{
+    width: 100%; 
+}
+
+.about .text{
+    width: 60%;
+    text-align: justify;
+    padding: 0 50px;
+}
+
+.about .text p{ 
+    text-indent: 20px;
+    font-size: 1.15rem;
+    color: var(--secondary);
+}
+
+.about .btn{
+    padding: 8px 20px;
+    color: var(--secondary);
+    background: none;
+    border-radius: 8px;
+    margin-top: 30px;  
+    font-size: 1.15em;
+    border: 2px solid var(--secondary);
+    cursor: pointer;
+    transition: 0.2s; 
+}
+
+.about .btn:hover{
+    background: var(--secondary);
+    color: var(--white);
+    transform: scale(1.04);
+}
+
+/* Divisi */
+.divisi .title{
+    margin-bottom: 50px;
+}
+
+.divisi .content{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.divisi .box{ 
+    background: var(--white);
+    color: var(--secondary);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 25px 20px;
+    border-radius: 8px;
+    text-align: center; 
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.divisi .content .box:hover{
+    transform: scale(1.05) rotate(1deg);
+}
+
+.divisi .content .box:nth-child(even):hover{
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.divisi .box h3{
+    font-size: 25px;
+    margin: 15px 0 5px; 
+}
+
+.divisi .box p{
+    color: var(--black);
+    text-align: justify;
+    font-size: 16px;
+}
+
+.divisi .box .btn{
+    padding: 8px 20px;
+    color: var(--secondary);
+    background: none;
+    border-radius: 8px;
+    margin-top: 20px;  
+    font-size: 14px;
+    border: 2px solid var(--secondary);
+    cursor: pointer;
+    transition: 0.2s; 
+}
+
+.divisi .box .btn:hover{
+    background: var(--secondary);
+    color: var(--white);
+}
+
+/* Program Kerja */ 
+.program .content{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.program .content .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    color: var(--secondary);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 45px 35px;
+    border-radius: 8px; 
+    transition: 0.3s;
+    width: 33%;
+    cursor: pointer;
+}
+
+
+.program .content .box:hover {
+    transform: scale(1.05) rotate(1deg);
+}
+
+.program .content .box:nth-child(even):hover{
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.program .box h3{
+    font-size: 25px;
+    margin: 15px 0 5px;  
+}
+
+.program .box h5{
+    font-size: 20px;
+    margin: -5px 0 15px;
+}
+
+.program .box img{
+    width: 100%; 
+    max-width: 150px;
+}
+
+.program .box p{
+    color: var(--black);
+    text-align: justify;
+    font-size: 16px;
+}
+
+/* Hubungi Kami */
+.contact{
+    background: var(--secondary);
+}
+
+.contact .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 115px 100px;
+}
+ 
+.contact .box{
+    width: 60%;
+}
+
+.contact .box .logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 50%;
+    color: var(--white);
+}
+
+.contact .box h3{
+    font-size: 32px;
+    margin: 25px 0 45px; 
+    color: var(--white);
+}
+
+.contact .social{
+    font-size: 16px;
+    gap: 30px;
+    display: flex; 
+    list-style: none;
+}
+
+.contact .social li{  
+    font-size: 22px; 
+    width: 45px;
+    padding: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.contact .social li:hover{
+    transform: scale(1.05);
+}
+ 
+.contact .box img{
+    width: 100%;
+    max-width: 50px; 
+}
+
+.contact svg path{
+    fill: var(--white);
+}
+
+.contact .title h3{
+    color: var(--white);
+}
+
+.contact .title h5{
+    color: var(--primary);
+}
+
+.contact .form{
+    width: 35%;
+    padding: 25px; 
+}
+
+.contact form{ 
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+}
+
+.contact form input, .contact form textarea{
+    padding: 15px;
+    border-radius: 4px;
+    background: var(--white);
+    color: var(--black);
+    font-size: 16px; 
+    border: none;
+    outline: none;
+}
+
+.contact form textarea{
+    height: 150px;
+    resize: none;
+}
+
+.contact form button{
+    padding: 10px;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 35%;
+    margin-left: auto;    
+}
+
+.contact form button:hover{
+    transform: scale(1.02);
+}
+
+/* Footer */
+footer{
+    background: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+footer a{
+    color: var(--white); 
+}
