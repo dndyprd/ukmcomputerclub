@@ -15,36 +15,44 @@
 <body>
     <!-- Navigation Ba -->
     <nav class="navbar">
-        <a href="#beranda" class="logo">
+        <a href="#beranda" class="logo" data-aos="fade-right" data-aos-delay="300">
             <img src="img/ukmcc-warna.png" alt="UKM Computer Club Logo">
             <div class="text">
                 <h3>UKM Computer Club</h3>
                 <h4>Politeknik Negeri Bali</h4>
             </div>
         </a>
-        <ul>
-            <a href="#beranda">
-                <li>Beranda</li>
-            </a>
-            <a href="#tentang">
-                <li>Tentang Kami</li>
-            </a>
-            <a href="#divisi">
-                <li>Divisi</li>
-            </a>
-            <a href="#program">
-                <li>Program Kerja</li>
-            </a>
-            <a href="#kontak">
-                <li>Kontak</li>
-            </a>
-        </ul>
+        <div class="list">
+            <div class="close" onclick="toggleMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul>
+                <a href="#beranda" data-aos="fade-left" data-aos-delay="400">
+                    <li>Beranda</li>
+                </a>
+                <a href="#tentang" data-aos="fade-left" data-aos-delay="350">
+                    <li>Tentang Kami</li>
+                </a>
+                <a href="#divisi" data-aos="fade-left" data-aos-delay="300">
+                    <li>Divisi</li>
+                </a>
+                <a href="#program" data-aos="fade-left" data-aos-delay="250">
+                    <li>Program Kerja</li>
+                </a>
+                <a href="#kontak" data-aos="fade-left" data-aos-delay="200">
+                    <li>Kontak</li>
+                </a>
+            </ul>
+        </div>
+        <div class="menu" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </nav>
     <!-- Home -->
     <section class="home" id="beranda">
         <div class="content">
             <h3 data-aos="fade-up">SELAMAT DATANG DI UKM</h3>
-            <h1 data-aos="fade-up" data-aos-delay="100">COMPUTER CLUB</h1>
+            <h1 data-aos="fade-up" data-aos-delay="100">COMPUTER <br>CLUB</h1>
             <h5 data-aos="fade-up" data-aos-delay="200">"Make It Happen"</h5>
             <div class="button" data-aos="fade-up" data-aos-delay="300">
                 <a href="#tentang">
@@ -99,16 +107,16 @@
             </div>
             <div class="box" data-aos="fade-right" data-aos-delay="200">
                 <i class="fa-solid fa-globe fa-2xl"></i>
-                <h3>Web Development</h3>
-                <p>Belajar mengembangkan Website dari tampilan hingga sistem.</p>
+                <h3>Web Dev</h3>
+                <p>Mengembangkan website dari tampilan hingga ke sistem.</p>
                 <a href="/divisi/webdev.html">
                     <button class="btn">LIHAT DETAIL <i class="fa-solid fa-magnifying-glass"></i></button>
                 </a>
             </div>
             <div class="box" data-aos="fade-right" data-aos-delay="300">
                 <i class="fa-solid fa-gamepad fa-2xl"></i>
-                <h3>Game Development</h3>
-                <p>Tidak hanya memainkannya, tapi juga membuat game itu sendiri.</p>
+                <h3>Game Dev</h3>
+                <p>Tidak hanya bermain, tapi juga membuat game itu sendiri.</p>
                 <a href="/divisi/gamedev.html">
                     <button class="btn">LIHAT DETAIL <i class="fa-solid fa-magnifying-glass"></i></button>
                 </a>
@@ -116,7 +124,7 @@
             <div class="box" data-aos="fade-right" data-aos-delay="100">
                 <i class="fa-regular fa-pen-to-square fa-2xl"></i>
                 <h3>VCD</h3>
-                <p>Eksplorasi Kreatifitas dengan memanfaatkan teknologi.</p>
+                <p>Eksplorasi dunia kreatifitas dengan teknologi.</p>
                 <a href="/divisi/vcd.html">
                     <button class="btn">LIHAT DETAIL <i class="fa-solid fa-magnifying-glass"></i></button>
                 </a>
@@ -154,17 +162,17 @@
     <section class="contact" id="kontak">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,64L40,85.3C80,107,160,149,240,144C320,139,400,85,480,80C560,75,640,117,720,138.7C800,160,880,160,960,144C1040,128,1120,96,1200,90.7C1280,85,1360,107,1400,117.3L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
         <div class="title">
-            <h3>Hubungi Kami</h3>
-            <h5>Hubungi Kami</h5>
+            <h3 data-aos="fade-up">Hubungi Kami</h3>
+            <h5 data-aos="fade-up" data-aos-delay="150">Hubungi Kami</h5>
         </div>
         <div class="content">
             <div class="box">
-                <a href="#home" class="logo">
+                <a href="#home" class="logo" data-aos="fade-right">
                     <img src="img/ukmcc-putih.png" alt="UKM Computer Club Logo">
                     <h2>UKM Computer Club</h2>
                 </a>
-                <h3>Teknologi bukan hanya sekedar alat, tetapi jembatan menuju masa depan.</h3>
-                <ul class="social">
+                <h3 data-aos="fade-right" data-aos-delay="100">Teknologi bukan hanya sekedar alat, tetapi jembatan menuju masa depan.</h3>
+                <ul class="social" data-aos="fade-right" data-aos-delay="200">
                     <li><a href="mailto:ukmcomputerclub@pnb.ac.id" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
                     <li><a href="https://www.instagram.com/ukmcomputerclub" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="https://https://www.tiktok.com/@ukmcomputerclub" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li> 
@@ -173,20 +181,26 @@
             </div>
             <div class="form">
                 <form action="/">
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Pesan" required></textarea>
-                    <button class="btn">KIRIM PESAN</button>
+                    <input type="email" placeholder="Email" required data-aos="fade-left">
+                    <textarea placeholder="Pesan" required data-aos="fade-left"data-aos-delay="100"></textarea>
+                    <button class="btn" data-aos="fade-left" data-aos-delay="200">KIRIM PESAN</button>
                 </form>
             </div>
         </div>
     </section>
-    <footer>Copyright <i class="fa-regular fa-copyright"></i> 2025 by <a href="https://instagram.com/dndyprd">@dndyprd</a></footer>
+    <footer>Created by <a href="https://instagram.com/dndyprd">@dndyprd</a> <i class="fa-regular fa-copyright"></i> 2025</footer>
 </body>
 <!-- Script JS -->
 <script src="fontaws.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-</script>
 
+    function toggleMenu() {
+        const menuToggle = document.querySelector('.menu');
+        const navbar = document.querySelector('nav .list');
+        menuToggle.classList.toggle('active');
+        navbar.classList.toggle('active');
+    }
+</script>
 </html>
