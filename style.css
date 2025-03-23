@@ -25,7 +25,8 @@ html {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
+  max-width: 100svw;
   overflow-x: hidden;
 }
 
@@ -36,8 +37,6 @@ h5 {
 
 .container {
   padding: 75px 90px 25px;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 .title {
@@ -71,6 +70,7 @@ nav {
   z-index: 2;
   background: var(--white);
   width: 90%;
+  max-width: 100svw;
   border-radius: 0 0 8px 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -136,9 +136,7 @@ nav ul li:hover::after {
   display: flex;
   align-items: center;
   color: var(--white);
-  height: 100vh; 
-  width: 100vw;
-  overflow-x: hidden;
+  height: 100vh;  
 }
 
 .home .content {
@@ -186,9 +184,7 @@ nav ul li:hover::after {
 
 /* Tentang Kami */
 .about {
-  padding: 75px 75px 50px 125px;
-  width: 100vw;
-  overflow-x: hidden;
+  padding: 75px 75px 50px 125px; 
 }
 
 .about .content {
@@ -394,7 +390,7 @@ nav ul li:hover::after {
 /* Hubungi Kami */
 .contact {
   background: var(--secondary);
-  width: 100vw;
+  width: 100svw;
   overflow-x: hidden;
 }
 
@@ -734,6 +730,11 @@ footer a {
 
 /* PHONE RESPONSIVE */
 @media only screen and (max-width: 768px) {  
+  body{
+    overflow-x: hidden !important;
+    width: 100svw !important;
+  }
+
   .container {
     padding: 75px 75px 25px;
   }
@@ -755,7 +756,8 @@ footer a {
   /* NAVBAR */
   nav { 
     padding: 10px 25px 7px;  
-    width: 85vw; 
+    width: 90%;
+    max-width: 100svw; 
   }
 
   nav .menu {
@@ -913,7 +915,7 @@ footer a {
   }
 
   .program .box h5 {
-    font-size: 20px;
+    font-size: 18px;
     margin: -5px 0 15px;
   }
 
