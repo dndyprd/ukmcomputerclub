@@ -126,6 +126,7 @@ nav ul li:hover::after {
 }
 
 /* HOME */
+<<<<<<< HEAD
 .home {
   min-height: 100dvh;
   width: 100%;
@@ -136,6 +137,19 @@ nav ul li:hover::after {
   display: flex;
   align-items: center;
   color: var(--white);
+=======
+.home{
+    min-height: 100vh;
+    width: 100%;
+    background-image: var(--secondary-gradient), url('img/hero.jpg'); 
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    color: var(--white); 
+>>>>>>> dd00c8fa15c96afc1f7482eea0682b8f33d8e590
 }
 
 .home .content {
@@ -514,6 +528,7 @@ footer {
   padding-bottom: 25px;
 }
 
+<<<<<<< HEAD
 footer a {
   color: var(--white);
 }
@@ -972,4 +987,8 @@ footer a {
   footer { 
     padding-bottom: 25px;
   } 
+=======
+footer a{
+    color: var(--white); 
+>>>>>>> dd00c8fa15c96afc1f7482eea0682b8f33d8e590
 }
