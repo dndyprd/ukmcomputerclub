@@ -36,6 +36,8 @@ h5 {
 
 .container {
   padding: 75px 90px 25px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .title {
@@ -127,8 +129,6 @@ nav ul li:hover::after {
 
 /* HOME */
 .home {
-  min-height: 100vh;
-  width: 100%;
   background-image: var(--secondary-gradient), url("img/hero.jpg");
   background-position: center;
   background-size: cover;
@@ -136,6 +136,9 @@ nav ul li:hover::after {
   display: flex;
   align-items: center;
   color: var(--white);
+  height: 100vh; 
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .home .content {
@@ -184,6 +187,8 @@ nav ul li:hover::after {
 /* Tentang Kami */
 .about {
   padding: 75px 75px 50px 125px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .about .content {
@@ -389,6 +394,8 @@ nav ul li:hover::after {
 /* Hubungi Kami */
 .contact {
   background: var(--secondary);
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .contact .content {
