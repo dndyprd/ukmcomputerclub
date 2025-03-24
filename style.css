@@ -795,6 +795,7 @@ footer a {
     padding: 35px 25px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
+    z-index: 5;
   }
 
   nav .list.active{
