@@ -129,7 +129,7 @@ nav ul li:hover::after {
 
 /* HOME */
 .home {
-  background-image: var(--secondary-gradient), url("img/hero.jpg");
+  background-image: var(--secondary-gradient), url("img/hero.png");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -298,6 +298,10 @@ nav ul li:hover::after {
   text-align: center;
   font-size: 40px;
   transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .divisi .content .box:hover {
@@ -317,23 +321,6 @@ nav ul li:hover::after {
   color: var(--black);
   text-align: justify;
   font-size: 16px;
-}
-
-.divisi .box .btn {
-  padding: 8px 20px;
-  color: var(--secondary);
-  background: none;
-  border-radius: 8px;
-  margin-top: 20px;
-  font-size: 14px;
-  border: 2px solid var(--secondary);
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.divisi .box .btn:hover {
-  background: var(--secondary);
-  color: var(--white);
 }
 
 /* Program Kerja */
@@ -753,63 +740,7 @@ footer a {
     margin-top: -30px; 
   }
 
-  /* NAVBAR */
-  nav { 
-    padding: 10px 25px 7px;  
-    width: 90%;
-    max-width: 100svw; 
-  }
-
-  nav .menu {
-    display: block;
-    font-size: 27px;
-    color: var(--primary);
-    cursor: pointer;
-  }
-
-  nav .logo .text{
-    display: none;
-  }
-
-  nav img {
-    width: 45px;
-  }
-
-  nav .close{
-    display: block;
-    font-size: 26px;
-    cursor: pointer;
-    color: var(--primary);
-  }
-
-  nav .list {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    position: absolute;
-    top: 0px;
-    right: -500px;
-    width: 60%;
-    height: 100vh;
-    background: var(--white);
-    padding: 35px 25px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
-    z-index: 5;
-  }
-
-  nav .list.active{
-    right: -10px;
-  }
-
-  nav .list ul{
-    display: block; 
-  } 
-
-  nav ul li {
-    margin: 20px 15px;
-    font-size: 16px;
-  }
+ 
 
   /* HOME */  
   .home .content {
