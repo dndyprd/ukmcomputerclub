@@ -740,7 +740,43 @@ footer a {
     margin-top: -30px; 
   }
 
- 
+  /* NAVBAR */
+  nav .logo .text{
+    display: none;
+  }
+
+  nav .mobile{
+    display: block;
+    font-size: 26px;
+    color: var(--primary);
+  }
+
+  nav .list.active{
+    right: 0px;
+  }
+
+  nav .list{
+    padding: 35px;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: -500px;
+    height: 100dvh;
+    width: 55vw;
+    background: var(--white);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.75s ease-in-out;
+  }
+
+  nav .list ul{
+    margin-top: 45px;
+    flex-direction: column;
+  }
+
+  nav .list ul li{
+    padding: 10px 0;
+    font-size: 16px;
+  }
 
   /* HOME */  
   .home .content {
